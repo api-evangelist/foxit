@@ -1,0 +1,289 @@
+openapi: 3.1.0
+info:
+  title: Foxit eSign API
+  version: '2026-10-16'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-16: 8 operation(s) read from 1 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; Foxit eSign has published no machine-readable contract that the
+    pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 6
+    documentation: 2
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-16'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.developer-api.foxit.com
+servers:
+- url: https://na1.fusion.foxit.com
+paths:
+  /:
+    get:
+      operationId: get
+      tags:
+      - Api
+      summary: GET /
+      x-source: https://docs.developer-api.foxit.com
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: 'curl - cURL
+
+          FOXIT APIS
+
+          Introduction
+
+          Overview
+
+          Getting Started
+
+          API Environments and Base URLs
+
+          🔐 Authorization - PDF Services APIs
+
+          PDF Services APIs
+
+          🚀Foxit PDF Services - Quick Start Guide
+
+          🔐 Authorization - Document Generation APIs
+
+          Document Generation APIs
+
+          🚀Document Generation - Quick Start Guide
+
+          🔐 Authorization - Foxit eSign APIs
+
+          eSign APIs
+
+          PDF Embed API
+
+          PDF Services APIs
+
+          Document Generation APIs
+
+          eS'
+  /api/documents/{document}-id/download:
+    get:
+      operationId: get_api_documents_document_id_download
+      tags:
+      - Api
+      summary: Download result
+      x-source: https://docs.developer-api.foxit.com
+      parameters:
+      - name: document
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: filename
+        in: query
+        required: false
+        schema:
+          type: string
+        description: Optional custom filename for the downloaded file.
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /document-generation/api/{apiid}:
+    get:
+      operationId: get_document_generation_api_apiid
+      tags:
+      - Document Generation
+      summary: Analyze a template document for text tags
+      x-source: https://docs.developer-api.foxit.com
+      parameters:
+      - name: apiid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetDocumentGenerationApiApiidResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at apiId
+    post:
+      operationId: post_document_generation_api_apiid
+      tags:
+      - Document Generation
+      summary: POST /document-generation/api/AnalyzeDocumentBase64
+      x-source: https://docs.developer-api.foxit.com
+      parameters:
+      - name: apiid
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostDocumentGenerationApiApiidRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --location 'https://na1.fusion.foxit.com/document-generation/api/AnalyzeDocumentBase64'  --header 'client_id: 7bxxx0xx0dxx4xxdbxx5axx1axxf3xxe'\
+          \  --header 'client_secret: 9a8xxx4d0xx0xx2xx0xx9xx9xx90xxCx'  --header 'Content-Type: application/json'  --data '{\n \"base64FileString\"\
+          : \"YOUR_DOCUMENT_BASE64_STRING\"\n}'\nExample of Text Tags Analysis:\nView More\nPlain Text\n{\n \"singleTagsString\": \"Account"
+        collapsed_from: 2 example path(s) differing only at apiId
+  /pdf-services/api/documents/6838c9cf6b1cc44ab40040cb/download:
+    get:
+      operationId: get_pdf_services_api_documents_6838c9cf6b1cc44ab40040cb_download
+      tags:
+      - Pdf Services
+      summary: GET /pdf-services/api/documents/6838c9cf6b1cc44ab40040cb/download
+      x-source: https://docs.developer-api.foxit.com
+      parameters:
+      - name: filename
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: 'curl --location ''https://na1.fusion.foxit.com/pdf-services/api/documents/6838c9cf6b1cc44ab40040cb/download?filename=financial-report-2023''  --header
+          ''client_id: YOUR_CLIENT_ID''  --header ''client_secret: YOUR_CLIENT_ID''
+
+          ⚠️ Error Handling
+
+          The Foxit PDF API implements standard HTTP status codes to indicate the outcome of API requests. In the event of an error, a structured
+          response is returned, makin'
+  /pdf-services/api/documents/upload:
+    get:
+      operationId: get_pdf_services_api_documents_upload
+      tags:
+      - Pdf Services
+      summary: GET /pdf-services/api/documents/upload
+      x-source: https://docs.developer-api.foxit.com
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetPdfServicesApiDocumentsUploadResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: 'curl --location ''https://na1.fusion.foxit.com/pdf-services/api/documents/upload''  --header ''Content-Type: multipart/form-data''  --header
+          ''client_id: YOUR_CLIENT_ID''  --header ''client_secret: YOUR_CLIENT_SECRET''  --form ''file=@"/C:/Users/Downloads/FoxitAPISampleDoc.pdf"''
+
+          Supported formats: PDF, Microsoft Office files, images, and plain text. extensions include: .jfif, .pjpeg, .jpeg, .jpe, .pjp, .jp'
+    post:
+      operationId: post_pdf_services_api_documents_upload
+      tags:
+      - Pdf Services
+      summary: Upload a document
+      x-source: https://docs.developer-api.foxit.com
+      parameters:
+      - name: file
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Source file to upload (multipart/form-data).
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostPdfServicesApiDocumentsUploadResponse'
+      x-evidence:
+        kind: documentation
+  /pdf-services/api/tasks/{task}-id:
+    get:
+      operationId: get_pdf_services_api_tasks_task_id
+      tags:
+      - Pdf Services
+      summary: Fetch operation status
+      x-source: https://docs.developer-api.foxit.com
+      parameters:
+      - name: task
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetPdfServicesApiTasksTaskIdResponse'
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    GetDocumentGenerationApiApiidResponse:
+      type: object
+      properties:
+        singleTagsString:
+          type: string
+        doubleTagsString:
+          type: string
+    PostDocumentGenerationApiApiidRequest:
+      type: object
+      properties:
+        base64FileString:
+          type: string
+    GetPdfServicesApiDocumentsUploadResponse:
+      type: object
+      properties:
+        taskId:
+          type: string
+        status:
+          type: string
+        progress:
+          type: integer
+        resultDocumentId:
+          type: string
+    PostPdfServicesApiDocumentsUploadResponse:
+      type: object
+      properties:
+        documentId:
+          type: string
+          description: Unique identifier for the uploaded document.
+    GetPdfServicesApiTasksTaskIdResponse:
+      type: object
+      properties:
+        taskId:
+          type: string
+        status:
+          type: string
+        progress:
+          type: integer
+        resultDocumentId:
+          type: string
+  securitySchemes:
+    basic:
+      type: http
+      scheme: basic
+security:
+- basic: []
+tags:
+- name: Api
+- name: Document Generation
+- name: Pdf Services

@@ -1,0 +1,17 @@
+generated: '2026-10-16'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: foxit.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Feb  2 12:33:51 2027 GMT
+  hsts: true
+  hsts_max_age: 31536000
+domains:
+- domain: foxit.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

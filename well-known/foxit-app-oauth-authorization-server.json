@@ -1,0 +1,1 @@
+{"grant_types_supported":["client_credentials"],"issuer":"https://app.developer-api.foxit.com","jwks_uri":"https://app.developer-api.foxit.com/.well-known/jwks.json","token_endpoint":"https://na1.fusion.foxit.com/oauth/token","token_endpoint_auth_methods_supported":["client_secret_basic","client_secret_post"]}

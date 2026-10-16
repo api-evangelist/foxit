@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "@vocab": "https://foxit.com/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foxit": "https://foxit.com/schema#",
+    "GetDocumentGenerationApiApiidResponse": "foxit:GetDocumentGenerationApiApiidResponse",
+    "singleTagsString": {
+      "@id": "foxit:singleTagsString",
+      "@type": "xsd:string"
+    },
+    "doubleTagsString": {
+      "@id": "foxit:doubleTagsString",
+      "@type": "xsd:string"
+    },
+    "PostDocumentGenerationApiApiidRequest": "foxit:PostDocumentGenerationApiApiidRequest",
+    "base64FileString": {
+      "@id": "foxit:base64FileString",
+      "@type": "xsd:string"
+    },
+    "GetPdfServicesApiDocumentsUploadResponse": "foxit:GetPdfServicesApiDocumentsUploadResponse",
+    "taskId": {
+      "@id": "foxit:taskId",
+      "@type": "xsd:string"
+    },
+    "status": {
+      "@id": "foxit:status",
+      "@type": "xsd:string"
+    },
+    "progress": {
+      "@id": "foxit:progress",
+      "@type": "xsd:integer"
+    },
+    "resultDocumentId": {
+      "@id": "foxit:resultDocumentId",
+      "@type": "xsd:string"
+    },
+    "PostPdfServicesApiDocumentsUploadResponse": "foxit:PostPdfServicesApiDocumentsUploadResponse",
+    "documentId": {
+      "@id": "foxit:documentId",
+      "@type": "xsd:string"
+    },
+    "GetPdfServicesApiTasksTaskIdResponse": "foxit:GetPdfServicesApiTasksTaskIdResponse"
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Foxit eSign API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Foxit eSign's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-16) from openapi/_ae-authored/foxit-openapi-generated.yml.",
+  "dcterms:created": "2026-10-16",
+  "dcterms:source": [
+    "openapi/_ae-authored/foxit-openapi-generated.yml"
+  ]
+}

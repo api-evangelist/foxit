@@ -1,0 +1,24 @@
+generated: '2026-10-16'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://developers.foxit.com/gdpr-compliance/
+sources:
+- https://developers.foxit.com/gdpr-compliance/
+- https://developers.foxit.com/industries/compliance/
+standards:
+- id: gdpr
+  conforms: true
+  evidence: At Foxit, we help dozens of customers achieve GDPR compliance.
+- id: openapi-3.1
+  conforms: true
+  evidence: the document declares 3.1.0
+- id: oauth2
+  conforms: false
+  evidence: 'securitySchemes: basic (http)'
+- id: rfc9457
+  conforms: false
+  evidence: no response declares application/problem+json
+- id: idempotency
+  conforms: false
+  evidence: no idempotency key parameter on mutating operations
+docs: https://developers.foxit.com/gdpr-compliance/

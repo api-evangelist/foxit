@@ -1,23 +1,134 @@
 aid: foxit
+
 name: Foxit eSign
-description: 'Foxit eSign is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.foxit.com/assets/images/og-images/thumb.webp
+
+description: Foxit Software provides Foxit eSign, a solution that enables organizations to send, sign, and manage agreements through secure electronic
+  signature workflows. The service is offered to businesses that need to handle legally binding signatures, integrate signing into document processes,
+  and manage signed documents at scale. It is part of Foxit’s broader portfolio of PDF and document productivity tools.
+
 url: https://raw.githubusercontent.com/api-evangelist/foxit/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-16 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-16'
+
 modified: '2026-10-16'
+
 tags:
-- Company
-apis: []
+- eSignature
+- Document Management
+- PDF
+- Cloud APIs
+- Enterprise Software
+- Workflow Automation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: SecurityTxt
+  url: well-known/foxit-foxit-security.txt
+- type: Plans
+  url: plans/foxit-plans-pricing.yml
+- type: Spectral
+  url: rules/foxit-rules.yml
+- type: JSONLD
+  url: json-ld/foxit-context.jsonld
+- type: Vocabulary
+  url: vocabulary/foxit-vocabulary.yml
+- type: DataModel
+  url: data-model/foxit-data-model.yml
+- type: Conformance
+  url: conformance/foxit-conformance.yml
+- type: LLMsTxt
+  url: llms/foxit-llms.txt
+- type: SecurityTxt
+  url: well-known/foxit-security.txt
+- type: WellKnown
+  url: well-known/foxit-well-known.yml
+- type: Hosts
+  url: hosts/foxit-hosts.yml
+- type: Vendors
+  url: vendors/foxit-vendors.yml
+- type: TrustCenter
+  url: https://www.foxit.com/trust-center/
+- type: TermsOfService
+  url: https://www.foxit.com/product/terms-of-service/
+- type: Support
+  url: https://www.foxit.com/support/refund-policy/
+- type: StatusPage
+  url: https://status.foxit.com/
+- type: SignUp
+  url: https://www.foxit.com/company/register-partner-deal/
+- type: Security
+  url: https://www.foxit.com/support/security/
+- type: SDKs
+  url: https://www.foxit.com/sdk/
+- type: PrivacyPolicy
+  url: https://www.foxit.com/company/privacy-policy/
+- type: Pricing
+  url: https://www.foxit.com/ai/pricing/
+- type: Blog
+  url: https://www.foxit.com/blog/
+- type: Documentation
+  url: https://developers.foxit.com/
+- type: VulnerabilityDisclosure
+  url: security/foxit-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/foxit-domain-security.yml
 - type: Website
   url: https://foxit.com/
+
+apis:
+- name: Foxit eSign API
+  description: API for Foxit eSign documented at the Foxit Developer portal.
+  humanURL: https://developers.foxit.com/
+  aid: foxit:foxit-esign-api
+- aid: foxit:foxit-api
+  name: Foxit eSign API
+  description: 'Foxit eSign API as documented publicly: 8 operations. Contract generated from the documentation by API Evangelist (2026-10-16);
+
+    not the provider''s own document.'
+  humanURL: https://docs.developer-api.foxit.com
+  baseURL: https://na1.fusion.foxit.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/foxit-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/foxit-get-pdf-services-api-documents-upload-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-get-pdf-services-api-tasks-task-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-post-pdf-services-api-documents-upload-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-get-document-generation-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-post-document-generation-api-apiid-request-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Developer portal pages are rendered via JavaScript, preventing machine‑readable spec discovery.
+  evidence:
+  - url: https://developers.foxit.com/
+    status: 200
+  checked: '2026-10-16'
+x-enrichment:
+  date: '2026-10-16'
+  status: enriched
+  artifacts_added: 25
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

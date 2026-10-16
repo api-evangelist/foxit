@@ -1,0 +1,14 @@
+generated: '2026-10-16'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.foxit.com/ai/pricing/
+sources:
+- https://www.foxit.com/ai/pricing/
+name: Foxit eSign pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Foxit AI Assistant (Free)
+  price_text: FREE
+  description: Included with every Foxit account, 300 AI credits per month.
+docs: https://www.foxit.com/ai/pricing/

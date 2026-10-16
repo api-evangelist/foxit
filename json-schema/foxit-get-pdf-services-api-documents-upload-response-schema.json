@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/foxit/main/json-schema/foxit-get-pdf-services-api-documents-upload-response-schema.json",
+  "title": "GetPdfServicesApiDocumentsUploadResponse",
+  "x-generated": "2026-10-16",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/foxit-openapi-generated.yml#/components/schemas/GetPdfServicesApiDocumentsUploadResponse",
+  "type": "object",
+  "properties": {
+    "taskId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "progress": {
+      "type": "integer"
+    },
+    "resultDocumentId": {
+      "type": "string"
+    }
+  }
+}
