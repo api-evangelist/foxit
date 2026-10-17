@@ -1,0 +1,25 @@
+{
+  "provider": "foxit",
+  "sources": [
+    "_ae-authored/foxit-openapi-generated.yml"
+  ],
+  "outputs": [
+    "foxit-document-generation-api-openapi.yml",
+    "foxit-documents-api-openapi.yml",
+    "foxit-foxit-esign-api-api-openapi.yml",
+    "foxit-pdf-services-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "foxit-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "foxit-openapi-generated.yml: tagged paths GET / -> Foxit ESign API",
+    "foxit-openapi-generated.yml: tagged paths GET /api/documents/{document}-id/download -> Documents",
+    "foxit-openapi-generated.yml: declared missing tag: Documents",
+    "foxit-openapi-generated.yml: declared missing tag: Foxit ESign API",
+    "apis.yml register: written (+4 apis, 5 total)"
+  ],
+  "skipped": []
+}

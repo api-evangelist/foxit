@@ -1,0 +1,78 @@
+openapi: 3.2.0
+info:
+  title: Foxit ESign API
+  version: '2026-10-16'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-16: 8 operation(s) read from 1 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Foxit eSign has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 6
+    documentation: 2
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-16'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.developer-api.foxit.com
+servers:
+- url: https://na1.fusion.foxit.com
+security:
+- basic: []
+tags:
+- name: Foxit ESign API
+paths:
+  /:
+    get:
+      operationId: get
+      tags:
+      - Foxit ESign API
+      summary: GET /
+      x-source: https://docs.developer-api.foxit.com
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: 'curl - cURL
+
+          FOXIT APIS
+
+          Introduction
+
+          Overview
+
+          Getting Started
+
+          API Environments and Base URLs
+
+          🔐 Authorization - PDF Services APIs
+
+          PDF Services APIs
+
+          🚀Foxit PDF Services - Quick Start Guide
+
+          🔐 Authorization - Document Generation APIs
+
+          Document Generation APIs
+
+          🚀Document Generation - Quick Start Guide
+
+          🔐 Authorization - Foxit eSign APIs
+
+          eSign APIs
+
+          PDF Embed API
+
+          PDF Services APIs
+
+          Document Generation APIs
+
+          eS'
+components:
+  securitySchemes:
+    basic:
+      type: http
+      scheme: basic

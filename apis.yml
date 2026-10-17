@@ -96,17 +96,16 @@ apis:
   description: API for Foxit eSign documented at the Foxit Developer portal.
   humanURL: https://developers.foxit.com/
   aid: foxit:foxit-esign-api
-- aid: foxit:foxit-api
-  name: Foxit eSign API
-  description: 'Foxit eSign API as documented publicly: 8 operations. Contract generated from the documentation by API Evangelist (2026-10-16);
-
-    not the provider''s own document.'
-  humanURL: https://docs.developer-api.foxit.com
+- aid: foxit:foxit-document-generation-api
+  name: Foxit eSign Document Generation API
+  description: The Document Generation API from Foxit eSign — 1 operation(s) for document generation.
+  humanURL: https://developers.foxit.com/
   baseURL: https://na1.fusion.foxit.com
+  tags:
+  - Document Generation
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/foxit-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/foxit-document-generation-api-openapi.yml
   - type: JSONSchema
     url: json-schema/foxit-get-pdf-services-api-documents-upload-response-schema.json
   - type: JSONSchema
@@ -117,7 +116,66 @@ apis:
     url: json-schema/foxit-get-document-generation-api-apiid-response-schema.json
   - type: JSONSchema
     url: json-schema/foxit-post-document-generation-api-apiid-request-schema.json
-
+- aid: foxit:foxit-documents-api
+  name: Foxit eSign Documents API
+  description: The Documents API from Foxit eSign — 1 operation(s) for documents.
+  humanURL: https://developers.foxit.com/
+  baseURL: https://na1.fusion.foxit.com
+  tags:
+  - Documents
+  properties:
+  - type: OpenAPI
+    url: openapi/foxit-documents-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/foxit-get-pdf-services-api-documents-upload-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-get-pdf-services-api-tasks-task-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-post-pdf-services-api-documents-upload-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-get-document-generation-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-post-document-generation-api-apiid-request-schema.json
+- aid: foxit:foxit-foxit-esign-api-api
+  name: Foxit eSign Foxit ESign API
+  description: The Foxit ESign API API from Foxit eSign — 1 operation(s) for foxit esign api.
+  humanURL: https://developers.foxit.com/
+  baseURL: https://na1.fusion.foxit.com
+  tags:
+  - Foxit ESign API
+  properties:
+  - type: OpenAPI
+    url: openapi/foxit-foxit-esign-api-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/foxit-get-pdf-services-api-documents-upload-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-get-pdf-services-api-tasks-task-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-post-pdf-services-api-documents-upload-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-get-document-generation-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-post-document-generation-api-apiid-request-schema.json
+- aid: foxit:foxit-pdf-services-api
+  name: Foxit eSign Pdf Services API
+  description: The Pdf Services API from Foxit eSign — 3 operation(s) for pdf services.
+  humanURL: https://developers.foxit.com/
+  baseURL: https://na1.fusion.foxit.com
+  tags:
+  - Pdf Services
+  properties:
+  - type: OpenAPI
+    url: openapi/foxit-pdf-services-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/foxit-get-pdf-services-api-documents-upload-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-get-pdf-services-api-tasks-task-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-post-pdf-services-api-documents-upload-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-get-document-generation-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/foxit-post-document-generation-api-apiid-request-schema.json
 x-coverage:
   state: unreadable
   reason: js-rendered-docs

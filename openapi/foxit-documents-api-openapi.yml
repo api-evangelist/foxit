@@ -1,0 +1,54 @@
+openapi: 3.2.0
+info:
+  title: Foxit eSign Documents API
+  version: '2026-10-16'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-16: 8 operation(s) read from 1 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Foxit eSign has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 6
+    documentation: 2
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-16'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.developer-api.foxit.com
+servers:
+- url: https://na1.fusion.foxit.com
+security:
+- basic: []
+tags:
+- name: Documents
+paths:
+  /api/documents/{document}-id/download:
+    get:
+      operationId: get_api_documents_document_id_download
+      tags:
+      - Documents
+      summary: Download result
+      x-source: https://docs.developer-api.foxit.com
+      parameters:
+      - name: document
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: filename
+        in: query
+        required: false
+        schema:
+          type: string
+        description: Optional custom filename for the downloaded file.
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+components:
+  securitySchemes:
+    basic:
+      type: http
+      scheme: basic
