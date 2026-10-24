@@ -12,3 +12,15 @@ plans:
   price_text: FREE
   description: Included with every Foxit account, 300 AI credits per month.
 docs: https://www.foxit.com/ai/pricing/
+x-canonical:
+  generated: '2026-10-23'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Foxit AI Assistant (Free)
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
