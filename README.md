@@ -64,5 +64,128 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Foxit eSign is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog) and added to the network as a stub for full-pipeline profiling.
-- https://foxit.com/
+Foxit Software provides Foxit eSign, a solution that enables organizations to send, sign, and manage agreements through secure electronic signature workflows. The service is offered to businesses that need to handle legally binding signatures, integrate signing into document processes, and manage signed documents at scale. It is part of Foxit’s broader portfolio of PDF and document productivity tools.
+
+**Areas:** E-Signature · Document Management · PDF · Cloud APIs · Enterprise Software · Workflow Automation
+
+## Foxit eSign on APIs.io
+
+Everything profiled for Foxit eSign is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/foxit/](https://apis.io/providers/foxit/)** — or go straight to one of the APIs or properties below.
+
+### APIs (5)
+
+- [Foxit eSign API](https://apis.io/apis/foxit/foxit-esign-api/) — API for Foxit eSign documented at the Foxit Developer portal.
+- [Foxit eSign Document Generation API](https://apis.io/apis/foxit/foxit-document-generation-api/) — The Document Generation API from Foxit eSign — 1 operation(s) for document generation.
+- [Foxit eSign Documents API](https://apis.io/apis/foxit/foxit-documents-api/) — The Documents API from Foxit eSign — 1 operation(s) for documents.
+- [Foxit eSign Foxit ESign API](https://apis.io/apis/foxit/foxit-foxit-esign-api-api/) — The Foxit ESign API API from Foxit eSign — 1 operation(s) for foxit esign api.
+- [Foxit eSign Pdf Services API](https://apis.io/apis/foxit/foxit-pdf-services-api/) — The Pdf Services API from Foxit eSign — 3 operation(s) for pdf services.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON Schema (5)
+
+The data models the API reads and writes.
+
+- [GetDocumentGenerationApiApiidResponse](https://apis.io/schemas/foxit/foxit-get-document-generation-api-apiid-response/)
+- [GetPdfServicesApiDocumentsUploadResponse](https://apis.io/schemas/foxit/foxit-get-pdf-services-api-documents-upload-response/)
+- [GetPdfServicesApiTasksTaskIdResponse](https://apis.io/schemas/foxit/foxit-get-pdf-services-api-tasks-task-id-response/)
+- [PostDocumentGenerationApiApiidRequest](https://apis.io/schemas/foxit/foxit-post-document-generation-api-apiid-request/)
+- [PostPdfServicesApiDocumentsUploadResponse](https://apis.io/schemas/foxit/foxit-post-pdf-services-api-documents-upload-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Foxit Context](https://apis.io/jsonld/foxit/foxit-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Foxit eSign API Rules](https://apis.io/rules/foxit/foxit-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Foxit Domain Security](https://apis.io/security/foxit/foxit-domain-security/)
+- [Foxit Vulnerability Disclosure](https://apis.io/security/foxit/foxit-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Foxit Plans Pricing](https://apis.io/plans/foxit/foxit-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://foxit.com/)
+- [Documentation](https://developers.foxit.com/)
+- [Pricing](https://www.foxit.com/ai/pricing/)
+- [Sign up](https://www.foxit.com/company/register-partner-deal/)
+- [Support](https://www.foxit.com/support/refund-policy/)
+- [Blog](https://www.foxit.com/blog/)
+- [Security](https://www.foxit.com/support/security/)
+- [Trust centre](https://www.foxit.com/trust-center/)
+- [Terms of service](https://www.foxit.com/product/terms-of-service/)
+- [Privacy policy](https://www.foxit.com/company/privacy-policy/)
+- [Status](https://status.foxit.com/)
+
+## API Evangelist rating
+
+**Kin Score 42.4** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 69.6 |
+| Contract quality | 23.6 |
+| Contract governance | 35.6 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 73.7 |
+
+**Agent readiness 26.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/foxit/](https://apis.io/providers/foxit/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Foxit eSign: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/foxit/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
